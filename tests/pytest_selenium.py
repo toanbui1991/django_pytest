@@ -60,6 +60,11 @@ def driver_init(request):
 #         self.driver.get(("%s%s" % (self.live_server_url, "/admin/")))
 #         assert "Log in | Django site admin" in self.driver.title
 #test case with multiple driver 
+
+"""
+Note about TestClassName
+    - TestClassName have to start with Test to run the test
+"""
 @pytest.mark.usefixtures("driver_init")
 class Test_URL_Chrome:
     def test_open_url(self, live_server):
