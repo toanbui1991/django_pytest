@@ -2,6 +2,9 @@ import pytest
 from core.app1.models import Product
 
 """
+what is parametrize:
+    - parametrize help to build test cases
+    - test cases will help test with the same code with multiple test case
 @pytest.mark.parametrize is a decorator which create a suit of test which allow us to test the same code with multiple suit
 """
 
